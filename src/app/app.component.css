@@ -1,43 +1,39 @@
-/* Navbar Styling */
 nav {
-    background-color: #002c5c; /* Set the navbar background color */
-    width: 100%; /* Full width of the screen */
-    height: 80px; /* Set height of the navbar */
+    background-color: #002c5c;
+    width: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }
-  
-  /* Wrapper for both sections (left and right) */
+
   .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Full width */
+    width: 100%;
   }
-  
-  /* Left section (Home logo) */
+
   .home-logo {
-    flex-basis: 10%; /* Small section for the image */
+    flex-basis: 10%;
     display: flex;
     align-items: center;
-    padding-left: 20px; /* Padding inside the navbar */
+    padding-left: 20px;
   }
   
   .home-icon {
-    width: 50px; /* Size of the home image */
+    width: 50px;
     height: auto;
   }
-  
-  /* Right section (navigation links) */
+
   .nav-links {
-    flex-basis: 90%; /* Take the rest of the navbar space */
+    flex-basis: 90%;
     display: flex;
-    justify-content: space-evenly; /* Evenly space out the links */
+    justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
-    padding-right: 20px; /* Padding on the right side of navbar */
+    padding-right: 20px;
   }
   
   .nav-links li {
@@ -54,10 +50,9 @@ nav {
   }
   
   a:hover {
-    color: #ffcc00; /* Link hover effect */
+    color: #444444;
   }
-  
-  /* Responsive Design for Smaller Screens */
+
   @media (max-width: 768px) {
     .nav-wrapper {
       flex-direction: column;

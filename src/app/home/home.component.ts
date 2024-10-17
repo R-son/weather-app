@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
     this.getRandomCitiesWeather();
   }
 
-  // Fetch weather for the searched city
   getWeather(): void {
     this.weatherService.getWeatherByCity(this.city).subscribe({
       next: (data) => this.weather = data,
@@ -25,7 +24,6 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  // Fetch weather for random cities
   getRandomCitiesWeather(): void {
     const randomCities = ['New York', 'London', 'Paris', 'Tokyo', 'Sydney', 'Saint Petersburg', 'Barcelona', 'São Paulo', 'Vancouver'];
     randomCities.forEach(city => {
@@ -36,12 +34,10 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  // Convert Celsius to Fahrenheit
   convertToFahrenheit(celsius: number): number {
-    return Math.round((celsius * 9/5) + 32);  // Round to the nearest whole number
+    return Math.round((celsius * 9/5) + 32);
   }  
 
-  // Get weather icon URL
   getWeatherIcon(iconCode: string): string {
     return `https://openweathermap.org/img/wn/${iconCode}.png`;
   }
