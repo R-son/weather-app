@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="search-box">
+    <div class="search-result" *ngIf="weather">
+      <img [src]="getWeatherIcon(weather.weather[0].icon)" alt="Weather Icon" class="weather-icon">
+      <h3>{{ weather.name }}</h3>
+      <p class="temperature">
+        <span class="temp-celsius">{{ weather.main.temp }}°C</span>
+        <span class="temp-fahrenheit">{{ convertToFahrenheit(weather.main.temp) }}°F</span>
+      </p>
+    </div>
+    <div class="search-input">
+      <input type="text" [(ngModel)]="city" placeholder="Enter city name">
+      <button (click)="getWeather()">Search</button>
+    </div>
+  </div>
+  <div class="random-cities">
+    <div class="city-weather" *ngFor="let randomWeather of randomWeathers">
+      <img [src]="getWeatherIcon(randomWeather.weather[0].icon)" alt="Weather Icon" class="weather-icon">
+      <h3>{{ randomWeather.name }}</h3>
+      <p class="temperature">
+        <span class="temp-celsius">{{ randomWeather.main.temp }}°C</span>
+        <span class="temp-fahrenheit">{{ convertToFahrenheit(randomWeather.main.temp) }}°F</span>
+      </p>
+    </div>
+  </div>
+</div>

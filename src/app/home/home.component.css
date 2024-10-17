@@ -1,0 +1,97 @@
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black; /* App background */
+  color: white; /* White text for better readability */
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border: 1px solid #002c5c; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  width: 70%;
+  background-color: #1a1a1a; /* Dark background for the box */
+}
+
+/* Search Result */
+.search-result {
+  flex: 1;
+  padding: 10px;
+  color: white; /* White text */
+}
+
+.weather-icon {
+  width: 50%;  /* Make the icon take up half the width */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Search Input */
+.search-input {
+  flex: 1;
+  padding: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #002c5c;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Random Cities */
+.random-cities {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.city-weather {
+  border: 1px solid #002c5c; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px;
+  margin: 10px;
+  background-color: #1a1a1a; /* Dark background for the box */
+  width: 250px;
+  text-align: center;
+}
+
+.temperature .temp-celsius {
+  color: blue;
+  font-weight: bold;
+}
+
+.temperature .temp-fahrenheit {
+  color: red;
+  font-weight: bold;
+}
+
+h3 {
+  color: white; /* Ensure city name is visible on black background */
+}
