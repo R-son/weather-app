@@ -8,14 +8,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
 import { WeatherService } from './weather.service';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { MapComponent } from './map/map.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
